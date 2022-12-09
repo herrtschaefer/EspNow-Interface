@@ -18,10 +18,12 @@
       static Now32* singleton32;
       std::list<esp_now_peer_info_t> peers;
 
+
+
+  public:
       std::function<void(uint8_t *mac, uint8_t *data, uint8_t message_len)> on_message_recieved = nullptr;
       std::function<void(uint8_t* mac,int success)> on_message_send = nullptr;
 
-  public:
       Now32() { this->singleton32 = this; }
       static Now32 *getSingleton() { return singleton32; }
     
@@ -36,6 +38,7 @@
       
       virtual void  register_on_send_cb(std::function<void(uint8_t* mac,int success)> cb);                           
       virtual void  register_on_message_cb(std::function<void(uint8_t *mac, uint8_t *data, uint8_t message_len)> cb);
+
 
     
   };

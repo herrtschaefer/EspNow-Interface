@@ -36,7 +36,7 @@ typedef enum : uint8_t {
   CH_11,
   Ch_12,
   CH_13,
-  CH_14;
+  CH_14,
 } now_channel_t;
 
 class ESPNOW_INTERFACE

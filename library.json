@@ -1,0 +1,27 @@
+{
+    "name": "EspNow-Interface",
+    "version": "1.0.0",
+    "description": "A unified API for the esp now protocol",
+    "keywords": "communication,esp_now,esp,now,wireless,espressif,esp32,esp8266",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/herrtschaefer/EspNow-Interface.git"
+    },
+    "authors":
+    [
+      {
+        "name": "herrtschaefer",
+        "email": "herrtschaefer@web.de",
+        "url": "https://github.com/herrtschaefer"
+      }
+
+    ],
+    "license": "GPL-3.0 license ",
+    "homepage": "ttps://github.com/herrtschaefer",
+    "dependencies": {
+      
+    },
+    "frameworks": "arduino",
+    "platforms": "espressif8266,espressif32"
+  }

@@ -46,7 +46,7 @@ class ESPNOW_INTERFACE
     virtual int   init() = 0;                                                                                             // < initialize the esp now interface
     virtual int   set_mac(uint8_t *mac) = 0;                                                                              // < change the mac address of this device
     virtual int   set_channel(now_channel_t channel) = 0;                                                                 // < set the esp now channel this device will communicate on. see espressif documentation for further details
-    virtual int   set_pmk(uint8_t* pmk);                                                                                  // < set the primary key refer to espressif doc for further information 
+    virtual int   set_pmk(uint8_t* pmk)=0;                                                                                  // < set the primary key refer to espressif doc for further information 
     virtual int   add_peer(uint8_t *mac, int channel = 0) = 0;                                                            // < add a device to your known devices list messages can only be send to known devices (except from Broadcast)
     virtual int   add_encrypted_peer(uint8_t *mac, int channel, uint8_t* LMK, size_t key_length) = 0;                     // < add a device and enable encryption refer to espressif doc for further information
     virtual int   remove_peer(uint8_t *mac) = 0;                                                                          // < delete a peer
